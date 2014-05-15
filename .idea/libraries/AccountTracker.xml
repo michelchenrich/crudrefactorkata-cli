@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="AccountTracker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RefatorToUCDA/out/artifacts/AccountTracker/AccountTracker.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../RefatorToUCDA/src" />
+    </SOURCES>
+  </library>
+</component>
