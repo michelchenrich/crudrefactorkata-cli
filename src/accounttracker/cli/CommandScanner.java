@@ -1,5 +1,7 @@
 package accounttracker.cli;
 
+import accounttracker.usecases.boundaries.DebitNotFoundException;
+
 import java.util.Scanner;
 
 import static java.lang.System.in;
@@ -29,6 +31,8 @@ public class CommandScanner {
             CommandDelegate.valueOf(command.toUpperCase()).execute();
         } catch (IllegalArgumentException ignored) {
             out.println("Unknown command");
+        } catch (DebitNotFoundException exception) {
+            out.println(String.format("No debit found for id %s", exception.debitId()));
         }
     }
 }
