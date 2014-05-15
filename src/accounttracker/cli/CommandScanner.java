@@ -21,7 +21,7 @@ public class CommandScanner {
 
     private void runSigle() {
         out.println("Choose a command: create, read, read_all, update, delete, exit");
-        String command = scanner.next();
+        String command = scanner.nextLine();
         if (command.equals("exit")) exit = true;
         else executeCommand(command);
     }

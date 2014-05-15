@@ -23,11 +23,13 @@ public class Request implements IdBasedRequest, DebitRequest, UpdateDebitRequest
 
     public double value() {
         out.println("Enter the debit's value");
-        return scanner.nextDouble();
+        double value = scanner.nextDouble();
+        scanner.nextLine();
+        return value;
     }
 
     public String description() {
         out.println("Enter the debit's description");
-        return scanner.next();
+        return scanner.nextLine();
     }
 }
